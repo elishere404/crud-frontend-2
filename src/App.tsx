@@ -16,7 +16,7 @@ function Navigation() {
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="text-xl font-bold flex items-center gap-2">
           <Video className="w-6 h-6" />
-          AnduTok
+          FRONTEND-CRUD
         </Link>
         <div className="flex items-center gap-4">
           {isAuthenticated ? (
