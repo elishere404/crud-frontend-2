@@ -57,7 +57,7 @@ const handleDelete = async (postId) => {
   try {
     await axios.delete(`https://express-auth-api-one.vercel.app/posts/${postId}`, {
       headers: {
-        'x-auth-token': localStorage.token, // Send authentication token
+        'x-auth-token': localStorage.token, 
       },
     });
 
@@ -107,7 +107,7 @@ const handleDelete = async (postId) => {
                   {users[post.user_id]}
                 </Link>
               ) : (
-                ' Loading...'
+                ' Loading... (please log in if you are not authenticated)'
               )}
             </p>
             {isAuthenticated && user?.id === post.user_id && (
